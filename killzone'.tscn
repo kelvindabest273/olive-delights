@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtcai7vdxwgiy"]
+
+[ext_resource type="Script" uid="uid://cyom7sdmtiim0" path="res://scripts/killzone'.gd" id="1_juf4k"]
+[ext_resource type="Texture2D" uid="uid://2a6j4ykgraku" path="res://backrooms.jpeg" id="2_k10dc"]
+
+[node name="killzone\'" type="Area2D" unique_id=1247812100]
+script = ExtResource("1_juf4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204350957]
+
+[node name="Backrooms" type="Sprite2D" parent="." unique_id=244037063]
+position = Vector2(-160, 1076)
+texture = ExtResource("2_k10dc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
